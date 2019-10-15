@@ -9,6 +9,38 @@ ActiveAdmin.register_page "Dashboard" do
       end
     end
 
+
+    columns do
+        column do
+          panel "Users" do
+            ul do
+              User.count
+            end
+          end
+        end
+       end
+
+
+       columns do
+           column do
+             panel "Companies" do
+               ul do
+                 User.count
+               end
+             end
+           end
+          end
+
+
+          columns do
+              column do
+                panel "Complaints" do
+                  ul do
+                    User.count
+                  end
+                end
+              end
+             end
     # Here is an example of a simple dashboard with columns and panels.
     #
     # columns do
