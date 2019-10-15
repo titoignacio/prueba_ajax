@@ -19,3 +19,4 @@ end
 250.times do
   Complaint.create(content: Faker::Lorem.sentence, user_id: User.all.sample.id, company_id: Company.all.sample.id)
 end
+AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?
